@@ -29,29 +29,6 @@ npm run build
 npm run preview
 ```
 
-## Publish on GitHub Pages
-
-This project includes a workflow at `.github/workflows/deploy-pages.yml` that builds and deploys `dist/` to GitHub Pages on every push to `main`.
-
-1. Create a new empty GitHub repository.
-2. Initialize git locally in this folder (if needed):
-
-```bash
-git init
-git branch -M main
-git add .
-git commit -m "Initial commit: SDF extractor app"
-git remote add origin https://github.com/<your-user>/<your-repo>.git
-git push -u origin main
-```
-
-3. In GitHub: `Settings -> Pages -> Build and deployment -> Source = GitHub Actions`.
-4. Pushes to `main` will automatically deploy the site.
-
-Notes:
-- The app uses relative asset paths and is compatible with GitHub Pages hosting.
-- First deployment can take a couple of minutes.
-
 ## Workflow
 
 1. Load an SDF file from disk.
